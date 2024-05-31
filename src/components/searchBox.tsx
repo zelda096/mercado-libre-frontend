@@ -7,7 +7,8 @@ const SearchBox: React.FC = () => {
   const navigate = useNavigate()
   const query = useHookstate("")
 
-  const handleSearch = (): void => {
+  const handleSearch = (e: React.FormEvent): void => {
+    e.preventDefault()
     if (query) {
       navigate(`/items?search=${query.get()}`)
     }

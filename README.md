@@ -28,5 +28,6 @@ Este es un proyecto de búsqueda de productos en Mercado Libre, desarrollado con
 
 1. Ejecuta `npm start` para iniciar la aplicación en modo de desarrollo.
 2. Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
-3. Recuerda primero ejecutar el servidor
+3. Para los test corre `npm run test`
+4. Recuerda primero ejecutar el servidor
 

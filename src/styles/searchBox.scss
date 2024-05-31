@@ -1,4 +1,3 @@
-
 $primary-color: #ffe600;
 $secondary-color: #ddd;
 
@@ -25,7 +24,7 @@ $secondary-color: #ddd;
 
 .search-button {
   background-color: $secondary-color;
-  color: #A29999;
+  color: #a29999;
   border: 1px solid $secondary-color;
   padding: 10px 15px;
   cursor: pointer;
@@ -35,7 +34,6 @@ $secondary-color: #ddd;
   &:hover {
     background-color: darken($secondary-color, 10%);
   }
-
 }
 
 .mercadolibre-logo {

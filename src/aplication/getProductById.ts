@@ -1,4 +1,3 @@
-import { ProductDetails } from "../core/domain/entities"
 import { ProductRepository } from "../infrastructure/productRepository"
 
 export const productDetailService = {

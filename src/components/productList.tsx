@@ -16,21 +16,20 @@ const ProductList: React.FC = () => {
     const inputString = JSON.stringify(inputQuery)
     const navigate = useNavigate()
 
-    const getproducts = async (): Promise<void> => {
-        try {
-            const response = await productService.getAllProducts(inputString)
-            products.set(response.items)
-            categories.set(response.categories)
-        } catch (error) {
-            console.error('Error fetching search products:', error)
-        }
-    }
-
     useEffect(() => {
+        const getproducts = async (): Promise<void> => {
+            try {
+                const response = await productService.getAllProducts(inputString)
+                products.set(response.items)
+                categories.set(response.categories)
+            } catch (error) {
+                console.error('Error fetching search products:', error)
+            }
+        }
         if (inputQuery) {
             getproducts()
         }
-    }, [inputQuery])
+    }, [inputQuery, products, categories, inputString])
 
     const onProductClick = (id: string): void => {
         navigate(`/items/${id}`)
